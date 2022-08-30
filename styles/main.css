@@ -1,0 +1,149 @@
+/* <===== FONTS =====> */
+/* font-family: 'Poppins', sans-serif; */
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+/* font-family: 'Josefin Slab', serif; */
+  @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&display=swap');
+
+/* font-family: 'Sorts Mill Goudy', serif; */
+  @import url('https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy:ital@0;1&display=swap');
+
+/* <===== ROOT & VARIABLES =====> */
+:root {
+  /* TYPOGRAPHY */
+  font-size: 10px;  /* making my font size 10px would make it easier to calculate  */
+  --ff-primary: 'Poppins', sans-serif;
+  --ff-secondary: 'Josefin Slab', serif;
+  --ff-secondary: 'Sorts Mill Goudy', serif;
+  --fs-p: 16px;
+  --fs-h1: 32px;
+  --fs-h2: 24px;
+  --fs-btn: ;
+  --fw-normal: 400;
+  --fw-medium: 500;
+  --fw-bold: 700; 
+  /* COLOR */
+  --color-body-bg:  #051020;
+  --color-card-bg: rgba(245, 222, 179, 0.05);
+  --color-txt: rgba(255, 255, 255, 0.75);
+  --color-a-link: ;
+  --color-a-hover: ;
+  --color-a-active: ;
+  --color-a-visited: ;
+  --color-h1: white;
+  --color-h2: white;
+  --color-btn-bg: white;
+  --color-btn-txt: black;
+  --color-btn-border: white;
+  --color-btn-hover-bg: ;
+  --color-btn-hover-txt: ;
+  /* LAYOUT */
+  --white-space: 35px;
+  --white-space-extended: ;
+}
+
+/* <===== GLOBAL STYLES =====> */
+h1 {
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-h1);
+  font-weight: var(--fw-bold);
+  text-transform: capitalize;
+  color: var(--color-h1);
+  line-height: 1.25;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-h2);
+  font-weight: var(--fw-medium);
+  text-transform: capitalize;
+  color: var(--color-h2);
+  line-height: 1.35;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-h3);
+  font-weight: var(--fw-medium);
+  text-transform: capitalize;
+  color: var(--color-h3);
+  line-height: 1.35;
+  margin-bottom: .5rem;
+}
+
+p {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-p);
+  font-weight: var(--fw-normal);
+  color: var(--color-txt);
+  line-height: 1.5;
+  margin-bottom: 1.75rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-a-link);
+}
+
+a:hover {
+  color: var(--color-a-hover);
+}
+
+a:active {
+  color: var(--color-a-active);
+}
+
+a:visited {
+  color: var(--color-a-visited);
+}
+
+
+.btn-wrapper {
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--color-btn-bg);
+  color: var(--color-btn-txt);
+  font-size: var(--fs-btn);
+  text-transform: capitalize;
+  padding: 1rem 2rem;
+  border: 2px solid var(--color-btn-border);
+  border-radius: 5px;
+  transition: .3s;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: var(--color-btn-txt);
+  color: var(--color-btn-bg);
+  font-weight: var(--fw-bold);
+}
+
+img {
+  border-radius: 5px;
+}
+
+.card {
+  background-color: var(--color-card-bg);
+  padding: var(--white-space);
+  border-radius: 5px;
+}
+
+/* <===== BODY =====> */
+body {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-p);
+  color: var(--color-txt);
+  background-color: var(--color-body-bg);
+  max-width: 720px;
+  padding: var(--white-space);
+  margin: 0 auto;
+}
